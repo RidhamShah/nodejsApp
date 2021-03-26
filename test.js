@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', (req, res, next) => {
 
 	console.log(req.body);
-	if (req.body.foo == 'hello')
+	if (req.body.foo == 'Hello')
 		res.send('World');
 	else
 		res.send('Not Hello');
